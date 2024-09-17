@@ -1,0 +1,10 @@
+type Result = 
+ variant {
+   err: text;
+   ok: text;
+ };
+type Drawing = record {imageData: text;};
+service : {
+  getDrawings: () -> (vec Drawing);
+  saveDrawing: (text) -> (Result);
+}

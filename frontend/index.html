@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw a Cat</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Draw a Cat</h1>
+        <div class="tools">
+            <input type="color" id="colorPicker" value="#000000">
+            <button id="clearBtn">Clear Canvas</button>
+            <button id="saveBtn">Save Drawing</button>
+            <button id="loadBtn">Load Drawings</button>
+        </div>
+        <canvas id="drawingCanvas" width="500" height="500"></canvas>
+        <div id="savedDrawings"></div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
